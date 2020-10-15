@@ -11,30 +11,22 @@ import java.util.Date;
  */
 public class Tarjeta {
 
-    public String nro_tarjeta="001";
-    public int valor=150000;
-    public Date ultimo_acceso = SimpleDateFormat("15/08/2020");
-    public int ultimo_valor_pagado=1500;
-    public String estacion="SANTA MONICA";
-    public int torno=7;
+    public String nro_tarjeta;
+    public int valor;
+    public Date ultimo_acceso;
+    public int ultimo_valor_pagado;
+    public String estacion;
+    public int torno;
 
-    Tarjeta() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private Date SimpleDateFormat(String ddMMyyyy) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    public Tarjeta(String nro_tarjeta,int valor,Date ultimo_acceso, int ultimo_valor_pagado, String estacion,int torno){
-        this.nro_tarjeta=nro_tarjeta;
-        this.valor = valor;
-        this.ultimo_acceso = ultimo_acceso;
-        this.ultimo_valor_pagado=ultimo_valor_pagado;
-        this.estacion=estacion;
-        this.torno = torno;
-           
-    }
+     public Tarjeta() {
+    nro_tarjeta="001";
+    valor=150000;
+    ultimo_acceso = new Date();
+    ultimo_valor_pagado=1500;
+    estacion="SANTA MONICA";
+    torno=7;
+        
+   }
 
     public String getNro_tarjeta() {
         return nro_tarjeta;
@@ -83,4 +75,5 @@ public class Tarjeta {
     public void setTorno(int torno) {
         this.torno = torno;
     }
+
 }
